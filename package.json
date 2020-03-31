@@ -1,0 +1,20 @@
+{
+  "name": "nodejs-express-sequelize",
+  "version": "1.0.0",
+  "description": "Following this tutorial: https://blog.rocketseat.com.br/nodejs-express-sequelize/",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ogabriel/nodejs-express-sequelize.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ogabriel/nodejs-express-sequelize/issues"
+  },
+  "homepage": "https://github.com/ogabriel/nodejs-express-sequelize#readme"
+}

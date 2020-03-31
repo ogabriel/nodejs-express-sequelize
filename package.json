@@ -16,5 +16,9 @@
   "bugs": {
     "url": "https://github.com/ogabriel/nodejs-express-sequelize/issues"
   },
-  "homepage": "https://github.com/ogabriel/nodejs-express-sequelize#readme"
+  "homepage": "https://github.com/ogabriel/nodejs-express-sequelize#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "sequelize": "^5.21.5"
+  }
 }

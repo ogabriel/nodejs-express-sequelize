@@ -6,10 +6,41 @@ const express = require('express');
 const app = express();
 
 const { User } = require('./models');
-User.create({ name: 'Claudio', email: 'claudio@rocketseat.com.br', password: '123456' });
 
 app.get('/', (req, res) => {
 	res.send('Hello World');
+});
+
+app.get('/users', (req, res) => {
+	User.findAll().then(data => {
+		res.send(data);
+	})
+});
+
+app.post('/users', (req, res) => {
+	User.create(req.body).then(data => {
+		res.send(data);
+	})
+});
+
+app.get('/users/:id', (req, res) => {
+	User.findByPk(req.params.id).then(data => {
+		res.send(data);
+	})
+});
+
+app.put('/users/:id', (req, res) => {
+	User.update(req.body).then(data => {
+		res.send(data);
+	})
+});
+
+app.delete('/users/:id', (req, res) => {
+	User.destroy({
+		where: { id: req.params.id }
+	}).then(data => {
+		res.send(data);
+	})
 });
 
 app.listen(3000)
